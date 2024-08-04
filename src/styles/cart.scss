@@ -1,0 +1,99 @@
+@import "colors";
+
+.cart {
+    height: 100vh;
+    display: grid;
+    border: 1px solid white;
+    grid-template-columns: 4fr 1fr;
+
+    >main {
+        padding: 2rem;
+        overflow-y: auto;
+
+        >h1 {
+            color: $tartiary;
+            font: 100 2rem "Roboto";
+        }
+    }
+
+    aside {
+        // border-radius: 100px 0 0 100px;
+        background-color: $primary;
+        color: $tartiary;
+        height: 100%;
+        width: 100%;
+        box-shadow: -10px 0 10px rgba(172, 169, 169, 0.182);
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        flex-direction: column;
+
+        >h2 {
+            margin: 1rem;
+            font: 100 1rem "Roboto";
+            letter-spacing: 2px;
+
+            &:last-of-type {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.cartItem{
+    background-color: $tartiary;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 0 1rem ;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    color: #000;
+    // gap: 2rem;
+
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    >div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        button{
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: $primary;
+            color: $tartiary;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: $primarydark;
+            }
+        }
+
+        p{
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+            // place-content: center;
+        }
+    }
+    >svg{
+        display: inline-block;
+        font-size: 1.5rem;
+        margin: auto;
+        cursor: pointer;
+        // place-content: center;
+
+        &:hover{
+            color: $secondary;
+        }
+        
+    }
+}
