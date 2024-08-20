@@ -46,12 +46,12 @@ const Cart = () => {
 
             </main>
 
-            <aside>
+            {/* <aside>
                 <h2>Subtotal: ${6362}</h2>
                 <h2>Shipping: ${6362313}</h2>
                 <h2>Tax: ${6362552436}</h2>
                 <h2>Total: ${6545362552436}</h2>
-            </aside>
+            </aside> */}
         </div>
     )
 }
